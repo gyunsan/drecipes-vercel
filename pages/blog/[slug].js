@@ -9,15 +9,15 @@ function PostDetailPage(props) {
     <Fragment>
       <Head>
         <title>{props.post.title}</title>
-        <meta name="title" content={props.post.title}/>
+        <meta name="title" content={props.post.title} />
         <meta name='description' content={props.post.excerpt} />
 
         {/* Facebook Open Graph Markup */}
-<meta property="og:url"                content='/' />
-<meta property="og:type"               content="article" />
-<meta property="og:title"              content={props.post.title} />
-<meta property="og:description"        content={props.post.excerpt} />
-<meta property="og:image"              content={props.post.image}  />
+        <meta property="og:url" content='/' />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={props.post.title} />
+        <meta property="og:description" content={props.post.excerpt} />
+        <meta property="og:image" content={props.post.image} />
       </Head>
       <PostContent post={props.post} />
     </Fragment>
