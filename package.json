@@ -1,0 +1,26 @@
+{
+  "name": "drecipes.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.1",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "firebase": "^9.16.0",
+    "gray-matter": "^4.0.3",
+    "mongodb": "^4.13.0",
+    "next": "13.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-horizontal-scrolling-menu": "^3.2.3",
+    "react-markdown": "^8.0.4",
+    "react-paginate": "^8.1.4",
+    "slugify": "^1.6.5"
+  }
+}

@@ -1,0 +1,146 @@
+body {
+  --color-grey-50: hsl(265, 55%, 96%);
+  --color-grey-100: hsl(265, 19%, 88%);
+  --color-grey-200: hsl(265, 7%, 70%);
+  --color-grey-300: hsl(265, 6%, 66%);
+  --color-grey-400: hsl(265, 4%, 57%);
+  --color-grey-500: hsl(265, 3%, 53%);
+  --color-grey-600: hsl(265, 4%, 42%);
+  --color-grey-700: hsl(265, 4%, 31%);
+  --color-grey-800: hsl(276, 5%, 20%);
+  --color-grey-900: hsl(280, 5%, 13%);
+
+  --color-primary-50: #c8b3ce;
+  --color-primary-100: #a07aaa;
+  --color-primary-200: #884c97;
+  --color-primary-300: #843897;
+  --color-primary-400: #732392;
+  --color-primary-500: #5a097a;
+  --color-primary-600: #480264;
+  --color-primary-700: #3d0264;
+
+  --color-success-100: #a2f0bc;
+  --color-success-500: #12bd4b;
+
+  --color-error-100: #f1acc9;
+  --color-error-500: #a10c4a;
+
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-8: 2rem;
+  --size-16: 4rem;
+  --size-20: 5rem;
+  --size-40: 10rem;
+  margin: 0;
+  color: #252525;
+}
+
+.homeHeadings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.homeHeadings a {
+  color: black;
+  font-size: 20px;
+}
+
+.homeHeadings a:hover {
+  text-decoration: underline;
+}
+
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  padding: 15px;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(81, 81, 230);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+p {
+  font-size: var(--size-5);
+}
+
+header{
+  position: sticky;
+  z-index: 30;
+  top: 0;
+}
+
+.nav__menu-list.active {
+  right: 0;
+}
+
+.nav__link {
+  font-size: 28px;
+  position: relative;
+
+}
+
+.nav__link:hover {
+  font-weight: bold;
+}
+
+.center {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav__menu-bar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  cursor: pointer;
+}
+
+.nav__menu-bar div {
+  width: 35px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.nav__menu-list {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  width: 288px;
+  row-gap: 24px;
+  right: -388px;
+  padding: 24px 16px;
+  transition: all 0.3s;
+  min-height: calc(100vh - 60px);
+  background-color: #fff;
+}
+
+
+
+.nav__menu-list div {
+  border-color: #12bd4b;
+}
+
+
+
+

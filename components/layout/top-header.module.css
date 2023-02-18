@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background-color: white;
+}
+
+.innerhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95vw;
+}
+

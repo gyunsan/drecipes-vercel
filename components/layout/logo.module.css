@@ -1,0 +1,10 @@
+.logo {
+  font-size: var(--size-5);
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: var(--size-8);
+  }
+}
