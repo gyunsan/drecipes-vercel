@@ -12,16 +12,16 @@ function PostContent(props) {
   const imagePath = `/images/blog/${post.slug}/${post.image}`;
 
   const customRenderers = {
-    // img(image) {
-    //   return (
-    //     <Image
-    //       src={`/images/blog/${post.slug}/${image.src}`}
-    //       alt={image.alt}
-    //       width={375}
-    //       height={250}
-    //     />
-    //   );
-    // },
+    img(image) {
+      return (
+        <Image
+          src={`/images/blog/${post.slug}/${image.src}`}
+          alt={image.alt}
+          width={375}
+          height={250}
+        />
+      );
+    },
     p(paragraph) {
       const { node } = paragraph;
 
@@ -31,7 +31,7 @@ function PostContent(props) {
         return (
           <div className={classes.image}>
             <Image
-              src={`/images/posts/${post.slug}/${image.properties.url}`}
+              src={`/images/blog/${post.slug}/${image.properties.src}`}
               alt={image.alt}
               width={600}
               height={300}
