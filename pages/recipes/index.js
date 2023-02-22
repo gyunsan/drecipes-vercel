@@ -15,7 +15,7 @@ function AllRecipesPage(props) {
     <Fragment>
       <h1>Browse All Recipes</h1>
       <h2>
-     Discover the delicious world of healthy eating with our healthy recipes website!
+     Discover the delicious world of healthy eating with our healthy recipes website.
      We believe that healthy food can be both nutritious and tasty, and our goal is to provide you with recipes that are both good for you and satisfying to your taste buds. Whether you're looking to lose weight, improve your overall health, or simply eat more nutritious meals, our website has got you covered.
       </h2>
       <CategoryLinks />
