@@ -71,7 +71,7 @@ export default function SideNav() {
         {itemsList.map((item) => {
           const { text, icon, link } = item;
           return (
-            <Link href={link}> <ListItem key={text} disablePadding>
+            <Link href={link} key={text}> <ListItem key={text} disablePadding>
               <ListItemButton>
                 {icon && <ListItemIcon>{icon}</ListItemIcon>}
                 <ListItemText primary={text} />
