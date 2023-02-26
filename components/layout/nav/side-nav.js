@@ -15,6 +15,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import ArticleIcon from '@mui/icons-material/Article';
 import { fontFamily, fontStyle } from '@mui/system';
 import InfoIcon from '@mui/icons-material/Info';
 import { Link } from '@mui/material';
@@ -46,14 +47,18 @@ export default function SideNav() {
       icon: <MenuBookIcon />,
       link: '/recipes'
     }, {
-      text: 'About',
-      icon: <InfoIcon />,
-      link: '/about'
+      text: 'Blog',
+      icon: <ArticleIcon />,
+      link: '/blog'
     }, {
-      text: 'Contact',
-      icon: <MailIcon />,
-      link: '/contact'
-    }
+        text: 'About',
+        icon: <InfoIcon />,
+        link: '/about'
+      }, {
+        text: 'Contact',
+        icon: <MailIcon />,
+        link: '/contact'
+      }
   ];
 
   const list = (anchor) => (
