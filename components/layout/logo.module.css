@@ -1,6 +1,7 @@
 .logo {
   font-size: var(--size-5);
-  color: black;
+  color: #fff;
+  padding-left: 15px;
 }
 
 @media (min-width: 768px) {

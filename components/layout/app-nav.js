@@ -11,9 +11,12 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import { Drawer, Box, Typography, IconButton } from "@mui/material";
+import { Drawer, Box, Typography, IconButton, Link } from "@mui/material";
 import { useState } from "react";
 import SideNav from './nav/side-nav';
+import Logo from './logo';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -168,15 +171,8 @@ export default function PrimarySearchAppBar() {
 
 
 
-          
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
-            drecipes
-          </Typography>
+          <Logo />
+
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -201,7 +197,7 @@ export default function PrimarySearchAppBar() {
               <Badge badgeContent={17} color="error">
                 <NotificationsIcon />
               </Badge>
-            </IconButton> */}
+            </IconButton>
             <IconButton
               size="large"
               edge="end"
@@ -224,6 +220,12 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <MoreIcon />
+            </IconButton> */}
+            <IconButton>
+           <Link href='https://www.instagram.com/drecipesmedia/' rel='nofollow' ><InstagramIcon color="secondary"/></Link>
+            </IconButton>
+            <IconButton>
+           <Link href='https://twitter.com/drecipesmedia' rel='nofollow' ><TwitterIcon color="secondary"/></Link>
             </IconButton>
           </Box>
         </Toolbar>

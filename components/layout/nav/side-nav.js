@@ -1,4 +1,5 @@
 import * as React from 'react';
+import classes from './side-nav.module.css'
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -17,6 +18,8 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import { fontFamily, fontStyle } from '@mui/system';
 import InfoIcon from '@mui/icons-material/Info';
 import { Link } from '@mui/material';
+import Logo from '../logo';
+import { ClassNames } from '@emotion/react';
 
 
 
@@ -32,7 +35,6 @@ export default function SideNav() {
 
     setState({ ...state, [anchor]: open });
   };
-  // const { history } = props;
   const itemsList = [
     {
       text: 'Home',
@@ -63,7 +65,7 @@ export default function SideNav() {
     >
       <ListItemButton>
         <ArrowBackIosNewRoundedIcon fontSize='large' />
-        <div style={{ fontSize: '25px' }}>Menu</div>
+        <div className={classes.menuText}>Menu</div>
       </ListItemButton>
       <Divider />
 
@@ -71,7 +73,7 @@ export default function SideNav() {
         {itemsList.map((item) => {
           const { text, icon, link } = item;
           return (
-            <Link href={link} key={text}> <ListItem key={text} disablePadding>
+            <Link href={link} key={text} style={{paddingLeft: 13, textDecoration: 'none', color:'#000'}}> <ListItem key={text} disablePadding >
               <ListItemButton>
                 {icon && <ListItemIcon>{icon}</ListItemIcon>}
                 <ListItemText primary={text} />
