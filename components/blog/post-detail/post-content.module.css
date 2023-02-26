@@ -11,12 +11,15 @@
 
 .content p {
   color: #000;
+  margin: 0 auto 1.125rem;
+  max-width: 700px;
 }
 
 .content .image {
   margin: var(--size-4) auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {

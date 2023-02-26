@@ -17,8 +17,8 @@ function PostContent(props) {
         <Image
           src={`/images/blog/${post.slug}/${image.src}`}
           alt={image.alt}
-          width={375}
-          height={250}
+          width={700}
+          height={350}
         />
       );
     },
@@ -33,8 +33,8 @@ function PostContent(props) {
             <Image
               src={`/images/blog/${post.slug}/${image.properties.src}`}
               alt={image.alt}
-              width={600}
-              height={300}
+              width={700}
+              height={350}
             />
           </div>
         );
