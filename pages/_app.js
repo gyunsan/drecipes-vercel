@@ -4,6 +4,7 @@ import Head from "next/head";
 import { Red_Hat_Display } from '@next/font/google';
 import PrimarySearchAppBar from "../components/layout/app-nav";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Footer from '../components/layout/footer/footer';
 
 const theme = createTheme({
   palette: {
@@ -17,7 +18,7 @@ const theme = createTheme({
 });
 
 
-const redHatDisplay = Red_Hat_Display ({
+const redHatDisplay = Red_Hat_Display({
   subsets: ['latin'],
   weight: '400',
 })
@@ -26,17 +27,18 @@ const redHatDisplay = Red_Hat_Display ({
 function MyApp({ Component, pageProps }) {
   return (
     <>
-    <ThemeProvider theme={theme}>
-    <PrimarySearchAppBar /> 
-    <main className={redHatDisplay.className}>
-      
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      <ThemeProvider theme={theme}>
+        <PrimarySearchAppBar />
+        <main className={redHatDisplay.className}>
 
-      <Component {...pageProps} />
-    </main>
-    </ThemeProvider></>
+          <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+          </Head>
+
+          <Component {...pageProps} />
+          <Footer />
+        </main>
+      </ThemeProvider></>
   );
 }
 
