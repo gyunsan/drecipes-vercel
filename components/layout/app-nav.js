@@ -175,7 +175,7 @@ export default function PrimarySearchAppBar() {
 
 
 
-                    <Logo />
+                <Logo />
 
                     <Search>
                         <SearchIconWrapper>

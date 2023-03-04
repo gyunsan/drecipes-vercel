@@ -1,9 +1,8 @@
-import { Link } from '@mui/material';
-import GreenHexaLogo from '../../public/drecipes-logo-green-hexagon.svg';
+import Link from 'next/link';
 import classes from './logo.module.css';
 
 function Logo() {
-  return <div className={classes.logo}><Link href='/'>drecipes </Link></div>;
+  return <Link href='/' className={classes.logo}>drecipes</Link>;
 }
 
 export default Logo;

@@ -1,9 +1,10 @@
 .logo {
   font-size: var(--size-5);
   color: #fff;
+  font-size: large;
   padding-left: 15px;
   padding-right: 15px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:sans-serif
 }
 
 @media (min-width: 768px) {
